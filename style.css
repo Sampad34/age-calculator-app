@@ -57,7 +57,9 @@ form{
 
 .form-block label{
     text-transform: uppercase;
+    color: var(--Smokey-grey);
     font-weight: 600;
+    letter-spacing: 3px;
 }
 
 
@@ -69,12 +71,18 @@ input{
     display: flex;
     align-items: center;
     font-size: 1.5rem;
+    font-weight: bold;
 }
 
 input::placeholder{
     font-size: 1.5rem;
     font-weight: 800;
 }
+
+
+input[type="number"] {
+    -moz-appearance: textfield;
+  }
 
 .submit-block{
     display: flex;
@@ -84,6 +92,8 @@ input::placeholder{
 
 .submit-block hr{
     width: 100%;
+    border: 1px solid var(--Light-grey);
+   
 }
 
 .submit-block .submit-btn{
@@ -116,28 +126,10 @@ small{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media screen and (max-width: 600px) {
     .card{
-        width: 360px;
+        /* width: 360px; */
+        width: unset;
     }
     .container{
         padding: 1rem;
